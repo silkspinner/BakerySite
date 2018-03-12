@@ -29,7 +29,7 @@ div.navbar {
     background-color:antiquewhite;
 }
 
-h1, h2, h3, h4, p, label, th, td {
+h1, h2, h3, h4, p, label, th, td, address{
     color:antiquewhite;
 }
 
@@ -37,7 +37,7 @@ div.jumbotron h1 {
     color: antiquewhite;
 }
 
-table, div.jumbotron {
+table, div.jumbotron, address {
     background-color: saddlebrown;
 }
 
