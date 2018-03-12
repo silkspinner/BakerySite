@@ -7,6 +7,8 @@
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    background-image: url("Images/Cafe-Bread-1280.jpg");
+    min-height: 30em;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -22,3 +24,28 @@ select,
 textarea {
     max-width: 280px;
 }
+
+div.navbar {
+    background-color:antiquewhite;
+}
+
+h1, h2, h3, h4, p, label, th, td {
+    color:antiquewhite;
+}
+
+div.jumbotron h1 {
+    color: antiquewhite;
+}
+
+table, div.jumbotron {
+    background-color: saddlebrown;
+}
+
+a:link, a:visited {
+    color: white;
+}
+
+a:active a:hover {
+    color: yellow;
+}
+
