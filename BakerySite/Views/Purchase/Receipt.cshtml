@@ -1,0 +1,37 @@
+﻿@model BakerySite.Models.Order
+
+@{
+    ViewBag.Title = "Receipt";
+}
+<div id="receipt">
+    <h2>Order Receipt</h2>
+    <hr />
+    <h3>Customer: @Html.DisplayTextFor(model => model.FirstName) @Html.DisplayTextFor(model => model.LastName)</h3>
+    <h3>Phone: @Html.DisplayTextFor(model => model.Phone)</h3>
+    <h3>Email: @Html.DisplayTextFor(model => model.Email)</h3>
+    <h3>Date: @Html.DisplayTextFor(model => model.Date)</h3>
+    <hr />
+    <table id="receipt-detail">
+        <tr>
+            <td>
+                Qty @Html.DisplayTextFor(model => model.Quantity) @Html.DisplayTextFor(model => model.ProductName)
+                at $@Html.DisplayTextFor(model => model.Price)
+            </td>
+            <td>@Html.DisplayTextFor(model => model.PriceCharged)</td>
+        </tr>
+
+        @if (Model.IsSenior)
+        {
+            <tr><td>- Senior Discount</td><td>@Html.DisplayTextFor(model => model.Discount)</td></tr>
+        }
+
+        @if (Model.IsEatIn)
+        {
+            <tr><td>+ Dine-In premium</td><td>@Html.DisplayTextFor(model => model.EatInTax)</td></tr>
+        }
+        <tr><td>Sales Tax</td><td>@Html.DisplayTextFor(model => model.SalesTax)</td></tr>
+        <tr><td>ORDER TOTAL</td><td>@Html.DisplayTextFor(model => model.Total)</td></tr>
+    </table>
+    <h3 id="homelink">@Html.ActionLink("Home", "Index", "Home")</h3>
+</div>
+

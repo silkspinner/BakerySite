@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BakerySite.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SalesTax206" Type="System.Decimal" Scope="Application">
+      <Value Profile="(Default)">0.1</Value>
+    </Setting>
+    <Setting Name="EatInPremium" Type="System.Decimal" Scope="Application">
+      <Value Profile="(Default)">0.25</Value>
+    </Setting>
+    <Setting Name="SeniorDiscountPercent" Type="System.Decimal" Scope="Application">
+      <Value Profile="(Default)">0.15</Value>
+    </Setting>
+    <Setting Name="SalesTaxArea" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">206</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

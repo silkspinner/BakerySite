@@ -38,11 +38,23 @@ namespace BakerySite.Controllers
             int pKey = (int)loginKey;
             Session["personKey"] = pKey;
 
-            //get username
+            //store username
             String first = (from p in be.People
                             where p.PersonKey.Equals(pKey)
                             select p.PersonFirstName).FirstOrDefault();
             Session["personName"] = first;
+
+            //store user phone
+            String phone = (from p in be.People
+                            where p.PersonKey.Equals(pKey)
+                            select p.PersonPhone).FirstOrDefault();
+            Session["personPhone"] = phone;
+
+            //store user email
+            String email = (from p in be.People
+                            where p.PersonKey.Equals(pKey)
+                            select p.PersonEmail).FirstOrDefault();
+            Session["personEmail"] = email;
 
             Message m = new Message();
             m.MessageTitle = "Login";

@@ -29,7 +29,7 @@ div.navbar {
     background-color:antiquewhite;
 }
 
-h1, h2, h3, h4, p, label, th, td, address{
+h1, h2, h3, p, label, th, td, address{
     color:antiquewhite;
 }
 
@@ -37,7 +37,7 @@ div.jumbotron h1 {
     color: antiquewhite;
 }
 
-table, div.jumbotron, address {
+table, div.jumbotron, address, form {
     background-color: saddlebrown;
 }
 
@@ -47,5 +47,55 @@ a:link, a:visited {
 
 a:active a:hover {
     color: yellow;
+}
+
+form {
+    padding: 2em;
+}
+
+div#receipt h2, div#receipt h3 {
+    color: darkgreen;
+}
+
+h3#homelink {
+    color: darkgreen;
+    background-color: saddlebrown;
+    width: 100px;
+    padding: .5em;
+    margin: .5em auto;
+} 
+
+div#receipt {
+    background-color: ivory;
+    padding: 2em;
+    width: 960px;
+    margin: 2em auto;
+}
+
+div#receipt p {
+        font-size: 1.5em;
+        color: darkgreen;
+    }
+
+table#receipt-detail {
+    background-color: ivory;
+    width: 640px;
+    margin: 0 auto;
+    padding: 1em;
+    font-size: 1.5em;
+    color: darkgreen;
+}
+
+table#receipt-detail td {
+
+    padding: .5em;
+    color: darkgreen;
+}
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
 }
 
